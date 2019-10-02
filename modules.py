@@ -52,8 +52,8 @@ def has_won(marker, board):
 def choose_first():
     rand = random.randint(1, 2)
     if rand == 1:
-        return "Player 1 goes first"
-    return "Player 2 goes first"
+        return "Player 1"
+    return "Player 2"
 
 
 def available(board, position):
@@ -74,7 +74,7 @@ def full_board(board):
 
 def player_choise(board):
     position = 0
-    while position not in range(1, 10) or available(board, position):
+    while position not in range(1, 10) or not available(board, position):
         position = int(input("Choose position: (1-9)"))
     return position
 
@@ -82,6 +82,3 @@ def player_choise(board):
 def replay():
     ans = input("Enter 'Yes' if you wish to replay").upper()
     return ans == "YES"
-
-
-
