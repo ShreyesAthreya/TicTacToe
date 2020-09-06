@@ -1,6 +1,5 @@
 import random
 
-
 def show_board(board):
     """
     Print board and 10 new lines

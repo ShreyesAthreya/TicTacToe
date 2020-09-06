@@ -16,7 +16,7 @@ while True:
         print("H")
         if turn == 'Player 1':
             show_board(the_board)
-            print("Player 1 da")
+            print("Player 1")
             position = player_choise(the_board)
             place_marker(the_board, player1, position)
             if has_won(player1, the_board):
@@ -34,11 +34,10 @@ while True:
         else:
             if turn == 'Player 2':
                 show_board(the_board)
-                print("Player 2 da")
+                print("Player 2")
                 position = player_choise(the_board)
                 place_marker(the_board, player2, position)
                 if has_won(player2, the_board):
-
                     show_board(the_board)
                     print("Player 2 has won")
                     game = False
